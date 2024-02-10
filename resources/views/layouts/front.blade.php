@@ -1,12 +1,9 @@
-@php
-    $setting = \App\Models\Setting::find(1);
-@endphp
+
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
     <title>{{$setting->website_title}} | @yield('title', '')</title>
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,13 +28,7 @@
 
 <body>
 
-    {{-- @include('frontend.include.headerTop') --}}
-    @include('frontend.include.header')
-
     @yield('content')
-
-    @include('frontend.include.footer')
-
 
     <script src="{{asset('assets/js/vendor/jquery-1.12.4.min.js')}}"></script>
     <script src="{{ asset('assets/js/popper.min.js') }}"></script>

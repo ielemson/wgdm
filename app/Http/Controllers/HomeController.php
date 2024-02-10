@@ -31,48 +31,49 @@ class HomeController extends Controller
         $features = Features::all();
         $sliders = Slider::where('status',1)->orderBy('id','ASC')->get();
         // dd($sliders);
-        $seo_title = "The Future Map Media, E-Commerce and Education Services, Media Solutions";
-        $seo_description = "E-Commerce and Education Services, Media Solutions,Online Learning Tools,Digital Marketing Solutions,Ad Campaign Management";
-        $seo_keywords = "Media Solutions, E-commerce Platforms, Educational Programs, Advertising Strategies, Digital Marketing Services, Multimedia Integration, Online Learning Resources, Retail Innovation, Targeted Ad Campaigns, Content Creation Services, E-learning Tools, Brand Promotion, Digital Advertising Solutions, Media Production, Online Retail Solutions, Educational Technology, Marketing Analytics, Cross-media Campaigns, Interactive Learning, Advertising Management";
+        $seo_title = "Wilderness Guides & Development Mission";
+        $seo_description = "A Resolution Project for Moral Excellence “
+        Being our Official motto, to be affixed in a prominent part of the website";
+        $seo_keywords = "charity, homeless, help charity organization";
         return view('frontend.home', compact('news','services','features','seo_title','seo_description','seo_keywords','sliders'));
     }
 
     public function aboutUs(){
         $services = Service::where('status',1)->get();
         $members =  User::whereHas("roles", function($q){ $q->where("name", "member_role"); })->orderBy('order_num', 'ASC')->get();
-        $seo_title = "The Future Map Media, E-Commerce and Education Services, Media Solutions";
-        $seo_description = "E-Commerce and Education Services, Media Solutions,Online Learning Tools,Digital Marketing Solutions,Ad Campaign Management";
-        $seo_keywords = "Media Solutions, E-commerce Platforms, Educational Programs, Advertising Strategies, Digital Marketing Services, Multimedia Integration, Online Learning Resources, Retail Innovation, Targeted Ad Campaigns, Content Creation Services, E-learning Tools, Brand Promotion, Digital Advertising Solutions, Media Production, Online Retail Solutions, Educational Technology, Marketing Analytics, Cross-media Campaigns, Interactive Learning, Advertising Management";
-        
+        $seo_title = "Wilderness Guides & Development Mission";
+        $seo_description = "A Resolution Project for Moral Excellence “
+        Being our Official motto, to be affixed in a prominent part of the website";
+        $seo_keywords = "charity, homeless, help charity organization";
         return view('frontend.pages.about',compact('services','members','seo_title','seo_description','seo_keywords'));
     }
 
     public function contactUs(){
         $services = Service::where('status',1)->get();
-        $seo_title = "The Future Map Media, E-Commerce and Education Services, Media Solutions";
-        $seo_description = "E-Commerce and Education Services, Media Solutions,Online Learning Tools,Digital Marketing Solutions,Ad Campaign Management";
-        $seo_keywords = "Media Solutions, E-commerce Platforms, Educational Programs, Advertising Strategies, Digital Marketing Services, Multimedia Integration, Online Learning Resources, Retail Innovation, Targeted Ad Campaigns, Content Creation Services, E-learning Tools, Brand Promotion, Digital Advertising Solutions, Media Production, Online Retail Solutions, Educational Technology, Marketing Analytics, Cross-media Campaigns, Interactive Learning, Advertising Management";
-        
+        $seo_title = "Wilderness Guides & Development Mission";
+        $seo_description = "A Resolution Project for Moral Excellence “
+        Being our Official motto, to be affixed in a prominent part of the website";
+        $seo_keywords = "charity, homeless, help charity organization";
         return view('frontend.pages.contact',compact('services','seo_title','seo_description','seo_keywords'));
     }
 
     public function companyTeam(){
         $services = Service::where('status',1)->get();
        $members =  User::whereHas("roles", function($q){ $q->where("name", "member_role"); })->orderBy('order_num', 'ASC')->get();
-       $seo_title = "The Future Map Media, E-Commerce and Education Services, Media Solutions";
-       $seo_description = "E-Commerce and Education Services, Media Solutions,Online Learning Tools,Digital Marketing Solutions,Ad Campaign Management";
-       $seo_keywords = "Media Solutions, E-commerce Platforms, Educational Programs, Advertising Strategies, Digital Marketing Services, Multimedia Integration, Online Learning Resources, Retail Innovation, Targeted Ad Campaigns, Content Creation Services, E-learning Tools, Brand Promotion, Digital Advertising Solutions, Media Production, Online Retail Solutions, Educational Technology, Marketing Analytics, Cross-media Campaigns, Interactive Learning, Advertising Management";
-        
+       $seo_title = "Wilderness Guides & Development Mission";
+       $seo_description = "A Resolution Project for Moral Excellence “
+       Being our Official motto, to be affixed in a prominent part of the website";
+       $seo_keywords = "charity, homeless, help charity organization";
        return view('frontend.pages.team',compact('members','services','seo_title','seo_description','seo_keywords'));
     }
 
     public function companyProfile($id){
         $services = Service::where('status',1)->get();
         $member = User::where('id',$id)->first();
-        $seo_title = "The Future Map Media, E-Commerce and Education Services, Media Solutions";
-       $seo_description = "E-Commerce and Education Services, Media Solutions,Online Learning Tools,Digital Marketing Solutions,Ad Campaign Management";
-       $seo_keywords = "Media Solutions, E-commerce Platforms, Educational Programs, Advertising Strategies, Digital Marketing Services, Multimedia Integration, Online Learning Resources, Retail Innovation, Targeted Ad Campaigns, Content Creation Services, E-learning Tools, Brand Promotion, Digital Advertising Solutions, Media Production, Online Retail Solutions, Educational Technology, Marketing Analytics, Cross-media Campaigns, Interactive Learning, Advertising Management";
-        
+        $seo_title = "Wilderness Guides & Development Mission";
+        $seo_description = "A Resolution Project for Moral Excellence “
+        Being our Official motto, to be affixed in a prominent part of the website";
+        $seo_keywords = "charity, homeless, help charity organization";
         return view('frontend.pages.member',compact('member','services','seo_title','seo_description','seo_keywords'));
     }
 
@@ -80,29 +81,29 @@ class HomeController extends Controller
     public function companyService($id){
         $services = Service::where('status',1)->get();
         $service = Service::where('id',$id)->first();
-        $seo_title = "The Future Map Media, E-Commerce and Education Services, Media Solutions";
-       $seo_description = "E-Commerce and Education Services, Media Solutions,Online Learning Tools,Digital Marketing Solutions,Ad Campaign Management";
-       $seo_keywords = "Media Solutions, E-commerce Platforms, Educational Programs, Advertising Strategies, Digital Marketing Services, Multimedia Integration, Online Learning Resources, Retail Innovation, Targeted Ad Campaigns, Content Creation Services, E-learning Tools, Brand Promotion, Digital Advertising Solutions, Media Production, Online Retail Solutions, Educational Technology, Marketing Analytics, Cross-media Campaigns, Interactive Learning, Advertising Management";
-        
+        $seo_title = "Wilderness Guides & Development Mission";
+        $seo_description = "A Resolution Project for Moral Excellence “
+        Being our Official motto, to be affixed in a prominent part of the website";
+        $seo_keywords = "charity, homeless, help charity organization";
         return view('frontend.pages.service',compact('services','service','seo_title','seo_description','seo_keywords'));
     }
 
     public function companyProjects(){
         $services = Service::where('status',1)->get();
-        $seo_title = "The Future Map Media, E-Commerce and Education Services, Media Solutions";
-        $seo_description = "E-Commerce and Education Services, Media Solutions,Online Learning Tools,Digital Marketing Solutions,Ad Campaign Management";
-        $seo_keywords = "Media Solutions, E-commerce Platforms, Educational Programs, Advertising Strategies, Digital Marketing Services, Multimedia Integration, Online Learning Resources, Retail Innovation, Targeted Ad Campaigns, Content Creation Services, E-learning Tools, Brand Promotion, Digital Advertising Solutions, Media Production, Online Retail Solutions, Educational Technology, Marketing Analytics, Cross-media Campaigns, Interactive Learning, Advertising Management";
-         
+        $seo_title = "Wilderness Guides & Development Mission";
+        $seo_description = "A Resolution Project for Moral Excellence “
+        Being our Official motto, to be affixed in a prominent part of the website";
+        $seo_keywords = "charity, homeless, help charity organization";
         return view('frontend.pages.projects',compact('services','seo_title','seo_description','seo_keywords'));
     }
 
     public function companyFeature($id){
         $services = Service::where('status',1)->get();
         $feature = Features::where('id',$id)->first();
-        $seo_title = "The Future Map Media, E-Commerce and Education Services, Media Solutions";
-        $seo_description = "E-Commerce and Education Services, Media Solutions,Online Learning Tools,Digital Marketing Solutions,Ad Campaign Management";
-        $seo_keywords = "Media Solutions, E-commerce Platforms, Educational Programs, Advertising Strategies, Digital Marketing Services, Multimedia Integration, Online Learning Resources, Retail Innovation, Targeted Ad Campaigns, Content Creation Services, E-learning Tools, Brand Promotion, Digital Advertising Solutions, Media Production, Online Retail Solutions, Educational Technology, Marketing Analytics, Cross-media Campaigns, Interactive Learning, Advertising Management";
-         
+        $seo_title = "Wilderness Guides & Development Mission";
+        $seo_description = "A Resolution Project for Moral Excellence “
+        Being our Official motto, to be affixed in a prominent part of the website";
+        $seo_keywords = "charity, homeless, help charity organization";
         return view('frontend.pages.feature',compact('services','feature','seo_description','seo_keywords'));
     }
 

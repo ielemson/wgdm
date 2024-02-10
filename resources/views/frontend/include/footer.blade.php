@@ -1,3 +1,4 @@
+
   <!--footer-area start-->
   <footer class="footer-area heding-bg pos-rel pt-100" style="background-image:url(assets/img/bg/02.png)">
     <div class="container">
@@ -7,11 +8,11 @@
                     <div class="footer__widget mb-30">
                         <h5 class="semi-title mb-25">Quick Links</h5>
                         <ul class="fot-list">
-                            <li><a href="#">About us</a></li>
-                            <li><a href="#">Latest events</a></li>
+                            <li><a href="{{ route('about.us') }}">About us</a></li>
+                            <li><a href="{{ route('login') }}">Login</a></li>
                             <li><a href="#">How It Works</a></li>
                             <li><a href="#">News & articles</a></li>
-                            <li><a href="#">Contact us</a></li>
+                            <li><a href="{{ route('contact.us') }}">Contact us</a></li>
                         </ul>
                     </div>
                 </div>
@@ -30,12 +31,13 @@
                 <div class="col-xl-4 col-lg-6 col-md-6  wow fadeInUp2 animated" data-wow-delay='.5s'>
                     <div class="footer__widget mb-25 pl-85">
                         <h5 class="semi-title mb-25">Our Project</h5>
-                        <p class="mb-10">Perspi ciatis unde omnis iste nat
-                            error sit voluptatem accusan</p>
+                        <p class="mb-10">
+                            {{ __('Welcome to Wilderness Guides & Development Mission') }}
+                        </p>
                         <ul class="fot-list address-list">
-                            <li><a href="#"><i class="far fa-map-marker-alt"></i> 250 Main Street, 2nd Floor, USA</a></li>
-                            <li><a href="#"><i class="far fa-envelope"></i> <span class="__cf_email__" data-cfemail="1a696f6a6a75686e5a7d777b737634797577">[email&#160;protected]</span></a></li>
-                            <li><a href="#"><i class="far fa-phone-volume"></i> 888 (0123) 456 79</a></li>
+                            <li><a href="#"><i class="far fa-map-marker-alt"></i>{{ $setting->address }}</a></li>
+                            <li><a href="#"><i class="far fa-envelope"></i> <span class="__cf_email__">{{ $setting->email }}</span></a></li>
+                            <li><a href="#"><i class="far fa-phone-volume"></i>{{ $setting->phone }}</a></li>
                         </ul>
                         
                     </div>
@@ -43,10 +45,11 @@
                 <div class="col-xl-4 col-lg-6 col-md-6  wow fadeInUp2 animated" data-wow-delay='.7s'>
                     <div class="footer__widget fot_abot mb-30 pl-85">
                         <h5 class="semi-title mb-25">Donation Us</h5>
-                        <p class="mb-30">Sed ut perspi ciatis unde omnis iste 
-                            natus error sit voluptatem accusantiu doloremque laudantiu totam</p>
+                        <p class="mb-30">
+                            {{ __('Welcome to Wilderness Guides & Development Mission') }}
+                        </p>
                             <div class="subscribe-content foter-subscribe">
-                                <form class="subscribe-form" action="https://www.devsnews.com/template/fande/fande/form.php">
+                                <form class="subscribe-form" action="#">
                                     <input class="form-control" type="text" placeholder="Enter Your Email">
                                     <button><i class="far fa-arrow-right"></i></button>
                                 </form>
@@ -62,13 +65,13 @@
             <div class="row align-items-center">
                 <div class="col-xl-7 col-lg-7 col-md-6">
                     <div class="footer-log mb-30">
-                        <a href="index.html" class="footer-logo mb-30"><img src="assets/img/logo/footer-logo1.png"
+                        <a href="{{ url('/') }}" class="footer-logo mb-30"><img src="{{ asset("assets/images/settings/$setting->website_logo") }}"
                             alt=""></a>
                     </div>
                 </div>
                 <div class="col-xl-5 col-lg-5 col-md-6">
                     <div class="copyright mb-30 text-md-right">
-                        <p>© 2020 Given. All Rights Reserved</p>
+                        <p>© {{ Date('Y') }} All Rights Reserved</p>
                     </div>
                 </div>
             </div>

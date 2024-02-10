@@ -1,63 +1,14 @@
 @extends('layouts.front')
-
+@php
+    $setting = \App\Models\Setting::find(1);
+@endphp
 @section('content')
-@section('title', '')
+@section('title', 'Home')
+{{-- include page header --}}
+@include('frontend.include.header')
 
 <main>
-    <!--slider-area start-->
-    <div class="slider-area pos-rel">
-        <div class="slider-active">
-            <div class="single-slider slider-height pos-rel d-flex align-items-center"
-                style="background-image: url(assets/img/slider/slider1.jpg);">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-7">
-                            <div class="slider__content text-left">
-                                <span class="sub-title left-line pl-80 mb-35">Crowd Founding </span>
-                                <h1 class="main-title mb-35" data-animation="fadeInUp2" data-delay=".2s">Change World
-                                    <span>Better Future.</span></h1>
-                                <ul class="btn-list">
-                                    <li><a class="theme_btn theme_btn_bg" href="about.html"
-                                            data-animation="fadeInLeft" data-delay=".5s">explore more <i
-                                                class="far fa-arrow-right"></i></a>
-                                    </li>
-                                    <li><a class="theme_btn theme-border-btn" href="contact.html"
-                                            data-animation="fadeInLeft" data-delay=".5s">donate now <i
-                                                class="far fa-arrow-right"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="single-slider slider-height pos-rel d-flex align-items-center"
-                style="background-image: url(assets/img/slider/slider2.jpg);">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-7">
-                            <div class="slider__content text-left">
-                                <span class="sub-title left-line pl-80 mb-35">Crowd Founding </span>
-                                <h1 class="main-title mb-35" data-animation="fadeInUp2" data-delay=".2s">Change World
-                                    <span>Better Future.</span></h1>
-                                <ul class="btn-list">
-                                    <li><a class="theme_btn theme_btn_bg" href="about.html"
-                                            data-animation="fadeInLeft" data-delay=".7s">explore more <i
-                                                class="far fa-arrow-right"></i></a>
-                                    </li>
-                                    <li><a class="theme_btn theme-border-btn" href="contact.html"
-                                            data-animation="fadeInLeft" data-delay=".7s">donate now <i
-                                                class="far fa-arrow-right"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--slider-area end-->
+    @include('frontend.include.slider')
     <!--feature-area start-->
     <section class="feature-area grey-bg pos-rel pt-130 pb-100">
         <div class="round-shape">
@@ -948,5 +899,7 @@
     </section>
     <!--cta-area end-->
 </main>
+{{-- include page footer --}}
 
+@include('frontend.include.footer')
 @endsection

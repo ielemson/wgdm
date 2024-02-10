@@ -1,4 +1,4 @@
-<div class="inner-banner inner-banner-bg">
+{{-- <div class="inner-banner inner-banner-bg">
     <div class="container">
         <div class="inner-title text-center">
             <h3>{{$banner_title ?? ''}}</h3>
@@ -10,4 +10,126 @@
             </ul>
         </div>
     </div>
+</div> --}}
+
+ <!-- preloader -->
+ <div id="preloader">
+    <div class="preloader">
+        <span></span>
+        <span></span>
+    </div>
 </div>
+<!-- preloader end  -->
+<!-- header-area start -->
+<header id="top-menu">
+    <div class="header-top-area  head-top-02 grey-bg pt-15 pb-15 d-none d-lg-block">
+        <div class="container custom-container-03">
+            <div class="row align-items-center">
+                <div class="col-xl-7 col-lg-8">
+                    <ul class="login-area">
+                        <li><span>Welcome to Given. Most Popular Crowdfounding Agency</span></li>
+                        {{-- <li><a class="sign_btn" href="#"><i class="far fa-phone"></i> Sign up</a></li> --}}
+                    </ul>
+                </div>
+                <div class="col-xl-5 col-lg-5 d-none d-xl-block">
+                    <div class="top-cta text-right">
+                        <span class="media-link"><i class="far fa-envelope"></i> <a href="#" class="__cf_email__">{{ $setting->phone }}</a></span>
+                        <span class="media-link"><i class="far fa-map-marker-alt"></i> {{ $setting->address }}
+                            USA</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-header-area main-head-02">
+        <div class="container custom-container-03">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-xl-2 col-lg-2 col-md-6 col-6">
+                    <div class="logo">
+                        <a class="logo-img" href=""><img src="{{ asset("assets/images/settings/$setting->website_logo") }}"
+                                alt=""></a>
+                    </div>
+                </div>
+                <div class="col-xl-7 col-lg-9 d-none d-lg-block text-lg-center text-xl-right">
+                    <div class="main-menu main-menu-02 d-none d-lg-block">
+                        <nav>
+                            <ul>
+                                <li><a class="active" href="{{ url('/') }}">Home</a></li>
+                                <li><a href="{{ route('about.us') }}">About</a></li>
+                                <li><a href="#">Events</a>
+                                   
+                                </li>
+                                <li><a href="#">Project</a><li><a href="#">Blogs</a>
+                                    
+                                </li>
+                                <li><a href="#">Pages <i class="far fa-chevron-down"></i></a>
+                                    <ul class="submenu">
+                                        <li><a href="">History</a></li>
+                                        <li><a href="">Career</a></li>
+                                        <li><a href="">Team</a></li>
+                                        <li><a href="">FAQ</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="{{ route('contact.us') }}">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-1 col-md-6 col-6 text-right d-flex align-items-center justify-content-end">
+                    <div class="quote-btn mr-10">
+                        <a href="{{ route('contact.us') }}" class="theme_btn theme_btn_bg">get a quote <i
+                                class="far fa-arrow-right"></i></a>
+                    </div>
+                    <div class="hamburger-menu">
+                        <a href="javascript:void(0);">
+                            <img src="assets/img/logo/bar-icon-01.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- header-area end -->
+
+<!-- slide-bar start -->
+<aside class="slide-bar">
+    <div class="close-mobile-menu">
+        <a href="javascript:void(0);"><i class="fas fa-times"></i></a>
+    </div>
+
+    <!-- offset-sidebar start -->
+    <div class="offset-sidebar">
+        <div class="offset-widget offset-logo mb-30">
+            <a href="">
+                <img src="assets/img/logo/header_logo_one.png" alt="logo">
+            </a>
+        </div>
+        <div class="offset-widget mb-40">
+            <div class="info-widget">
+                <h4 class="offset-title mb-20">About Us</h4>
+                <p class="mb-30">
+                    But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain
+                    was born and will give you a complete account of the system and expound the actual teachings of
+                    the great explore
+                </p>
+                <a class="theme_btn theme_btn_bg" href="">Contact Us</a>
+            </div>
+        </div>
+        <div class="offset-widget mb-30 pr-10">
+            <div class="info-widget info-widget2">
+                <h4 class="offset-title mb-20">Contact Info</h4>
+                <p> <i class="fal fa-address-book"></i> 23/A, Miranda City Likaoli Prikano, Dope</p>
+                <p> <i class="fal fa-phone"></i> +0989 7876 9865 9 </p>
+                <p> <i class="fal fa-envelope-open"></i> <a href="https://www.devsnews.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="83eaede5ecc3e6fbe2eef3efe6ade0ecee">[email&#160;protected]</a> </p>
+            </div>
+        </div>
+    </div>
+    <!-- offset-sidebar end -->
+
+    <!-- side-mobile-menu start -->
+    @include('frontend.include.aside')
+    <!-- side-mobile-menu end -->
+</aside>
+<div class="body-overlay"></div>
+<!-- slide-bar end -->
