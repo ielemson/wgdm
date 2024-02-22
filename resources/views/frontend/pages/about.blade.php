@@ -41,35 +41,23 @@
                         <div class="about-img__thumb wow fadeInUp2 animated" data-wow-delay='.1s'>
                             <img src="assets/img/about/03.jpg" alt="">
                         </div>
-                        <div class="about-img__style-text wow fadeInUp2 animated" data-wow-delay='.3s'>
-                            <img src="assets/img/about/02.png" alt="">
-                        </div>
-                        <div class="about-img__style-shape wow fadeInUp2 animated" data-wow-delay='.4s'>
-                            <img src="assets/img/shape/07.png" alt="">
-                        </div>
+                        /div>
+                     
                     </div>
                 </div>
                 <div class="col-xl-7 col-lg-6 col-md-12">
                     <div class="about__wrapper about__wrap__03 pl-65 wow fadeInUp2 animated" data-wow-delay='.3s'>
                         <div class="section-title text-left mb-35">
                             <h6 class="left-line pl-75">Who We Are</h6>
-                            <h2>We’ve 25+ Years Of 
-                                Experienced In Crowd<br>
-                                <span>Founding Agency</span></h2>
+                            <h2>About Us</h2>
                         </div>
-                        <div class="partner-list d-sm-flex align-items-center mb-30">
-                            <div class="total-client">
-                                <h4><span>36k </span> Our Global Partner</h4>
-                            </div>
-                            <div class="joint-btn ml-15">
-                                <a href="contact.html" class="theme_btn theme_btn2 ">join with us <i
-                                        class="far fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam, eaque ipsa quae ab illo invtore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo ipsams voluptatem quia voluptas sit aspernatur aut odit aut fugie</p>
-                        <p>Aperiam, eaque ipsa quae ab illo invtore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo ipsams voluptatem</p>
-                        <a href="contact.html" class="theme_btn theme_btn_bg mt-25">get a quote <i
-                            class="far fa-arrow-right"></i></a>
+                        <p>Wilderness Guides & Development Mission Inc., is a non-profit Organization, managed under the discretion of the professionals, since 2016; for the elevations of the less-privileged.
+                        </p>
+                        <h6>Our Work</h6>
+                        <p>We serve in downtrodden communities; changing conceptions and human behaviors, by funding individual beneficiaries in commerce, irrespective of race, creed, and or belief; while adhering to:
+                            “ <b>A RESOLUTION PROJECT FOR MORAL EXCELENCE</b> ”
+                            It’s a strict adherence to us, as to develop the sense of belonging in human endeavour; and not despised, being a citizen of this nation by provision of necessary guideline, development, and funding investment for every of our beneficiary.  
+                            </p>
                     </div>
                 </div>
             </div>
@@ -77,7 +65,7 @@
     </section>
     <!--about-us-area end-->
     <!--feature-project-area start-->
-    <section class="about-feature-project pb-25">
+    {{-- <section class="about-feature-project pb-25">
         <div class="container">
             <div class="row">
                 <div class="col-xl-6 col-lg-6 col-md-12">
@@ -152,10 +140,10 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!--feature-project-area end-->
      <!--counter-area start-->
-     <section class="counter-area heding-bg pt-130 pb-95" style="background-image: url(assets/img/bg/03.png);">
+     {{-- <section class="counter-area heding-bg pt-130 pb-95" style="background-image: url(assets/img/bg/03.png);">
         <div class="container">
             <div class="row">
                 <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6">
@@ -188,10 +176,10 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!--counter-area end-->
     <!--team-area start-->
-    <section class="team-area pt-125 pb-100">
+    {{-- <section class="team-area pt-125 pb-100">
         <div class="container">
             <div class="row">
                 <div class="col-xl-10 offset-xl-1">
@@ -369,7 +357,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!--team-area end-->
     <!--donation-area start-->
     <section class="donation-area pt-125 pb-100" style="background-image:url(assets/img/events/01.jpg)">
@@ -384,11 +372,11 @@
                                 <span>Right Place</span></h2>
                         </div>
                         <ul class="btn-list text-center mb-30 wow fadeInUp2 animated" data-wow-delay='.3s'>
-                            <li><a class="theme_btn theme_btn_bg" href="blog-details.html"
+                            <li><a class="theme_btn theme_btn_bg" href="{{ route("contact.us") }}"
                                     data-animation="fadeInLeft" data-delay=".7s">explore more <i
                                         class="far fa-arrow-right"></i></a>
                             </li>
-                            <li><a class="theme_btn theme-border-btn" href="contact.html"
+                            <li><a class="theme_btn theme-border-btn" href="{{ route("contact.us") }}"
                                     data-animation="fadeInLeft" data-delay=".7s">donate now <i
                                         class="far fa-arrow-right"></i></a>
                             </li>
@@ -400,7 +388,7 @@
     </section>
     <!--donation-area end-->
     <!--testimonial-area start-->
-    <section class="testimonial-area theme-bg2 pt-125 pb-130" style="background-image:url(assets/img/bg/04.png);">
+    {{-- <section class="testimonial-area theme-bg2 pt-125 pb-130" style="background-image:url(assets/img/bg/04.png);">
         <div class="container">
             <div class="row">
                 <div class="col-xl-10 offset-xl-1">
@@ -496,7 +484,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!--testimonial-area end-->
     <!--brand-area start-->
     <section class="brand-area grey-bg2 pt-130">
@@ -563,7 +551,7 @@
     </section>
     <!--brand-area end-->
     <!--blog-area start-->
-    <section class="blog-area pt-130 pb-100">
+    {{-- <section class="blog-area pt-130 pb-100">
         <div class="container">
             <div class="row no-gutters">
                 <div class="col-xl-4 col-lg-8 col-md-12">
@@ -630,7 +618,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!--blog-area end-->
     <!--cta-area start-->
     <section class="cta-area theme-bg pt-55 pb-25">

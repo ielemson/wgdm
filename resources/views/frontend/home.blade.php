@@ -10,7 +10,7 @@
 <main>
     @include('frontend.include.slider')
     <!--feature-area start-->
-    <section class="feature-area grey-bg pos-rel pt-130 pb-100">
+    {{-- <section class="feature-area grey-bg pos-rel pt-130 pb-100">
         <div class="round-shape">
             <img src="assets/img/shape/01.png" alt="">
         </div>
@@ -67,231 +67,18 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!--feature-area end-->
-    <!--feature-project-area start-->
-    <section class="feature-project-area pt-125 pb-100">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-10 offset-xl-1">
-                    <div class="section-title text-center mb-85 wow fadeInUp2 animated" data-wow-delay='.1s'>
-                        <h6 class="left-line pl-75 pr-75">Features Projects</h6>
-                        <h2>We've Take A Mission To <br>
-                            <span>Solve The Project</span></h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-6 col-lg-6 col-md-12">
-                    <div class="projects grey-bg d-sm-flex mb-30 wow fadeInUp2 animated" data-wow-delay='.1s'>
-                        <div class="projects__thumb">
-                            <img src="https://devsnews.com/template/fande/fande/assets/img/project/01.jpg/" alt="">
-                        </div>
-                        <div class="projects__content">
-                            <h4><a href="project-video.html">Reference Pico-Neo2
-                                    Condition New</a></h4>
-                            <div class="skill mb-30">
-                                <p>Raised <span>$2535</span></p>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="85"
-                                        aria-valuemin="0" aria-valuemax="85">
-                                        <h5>85%</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="projects__content--manager">
-                                <ul class="project-manager">
-                                    <li><a href="#"><img src="https://devsnews.com/template/fande/fande/assets/img/project/01.png/" alt="">
-                                            <span>Somalia</span></a></li>
-                                    <li>
-                                        <p class="time"><i class="far fa-clock"></i> 7 Days Left</p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-6 col-lg-6 col-md-12">
-                    <div class="projects grey-bg d-sm-flex mb-30 wow fadeInUp2 animated" data-wow-delay='.3s'>
-                        <div class="projects__thumb">
-                            <img src="https://devsnews.com/template/fande/fande/assets/img/project/02.jpg/" alt="">
-                        </div>
-                        <div class="projects__content">
-                            <h4><a href="project-video.html">Pimax-Vision-852x
-                                    Condition New</a></h4>
-                            <div class="skill mb-30">
-                                <p>Raised <span>$2535</span></p>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="29"
-                                        aria-valuemin="0" aria-valuemax="29">
-                                        <h5>29%</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="projects__content--manager">
-                                <ul class="project-manager">
-                                    <li><a href="#"><img src="https://devsnews.com/template/fande/fande/assets/img/project/01.png/" alt="">
-                                            <span>Somalia</span></a></li>
-                                    <li>
-                                        <p class="time"><i class="far fa-clock"></i> 7 Days Left</p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-6 col-lg-6 col-md-12">
-                    <div class="projects grey-bg d-sm-flex mb-30 wow fadeInUp2 animated" data-wow-delay='.5s'>
-                        <div class="projects__thumb">
-                            <img src="https://devsnews.com/template/fande/fande/assets/img/project/03.jpg/" alt="">
-                        </div>
-                        <div class="projects__content">
-                            <h4><a href="project-video.html">Mobile UI Design For
-                                    Beginners Part</a></h4>
-                            <div class="skill mb-30">
-                                <p>Raised <span>$2535</span></p>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="72"
-                                        aria-valuemin="0" aria-valuemax="72">
-                                        <h5>72%</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="projects__content--manager">
-                                <ul class="project-manager">
-                                    <li><a href="#"><img src="https://devsnews.com/template/fande/fande/assets/img/project/01.png/" alt="">
-                                            <span>Somalia</span></a></li>
-                                    <li>
-                                        <p class="time"><i class="far fa-clock"></i> 7 Days Left</p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-6 col-lg-6 col-md-12">
-                    <div class="projects grey-bg d-sm-flex mb-30 wow fadeInUp2 animated" data-wow-delay='.7s'>
-                        <div class="projects__thumb">
-                            <img src="https://devsnews.com/template/fande/fande/assets/img/project/04.jpg/" alt="">
-                        </div>
-                        <div class="projects__content">
-                            <h4><a href="project-video.html">Micrologic ML-522 BT
-                                    Bluetooth Speaker</a></h4>
-                            <div class="skill mb-30">
-                                <p>Raised <span>$2535</span></p>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="48"
-                                        aria-valuemin="0" aria-valuemax="48">
-                                        <h5>48%</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="projects__content--manager">
-                                <ul class="project-manager">
-                                    <li><a href="#"><img src="https://devsnews.com/template/fande/fande/assets/img/project/01.png/" alt="">
-                                            <span>Somalia</span></a></li>
-                                    <li>
-                                        <p class="time"><i class="far fa-clock"></i> 7 Days Left</p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--feature-project-area end-->
+   
     <!--about-us-area start-->
-    <section class="about-us-area pb-70">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-6 col-lg-6 col-md-12">
-                    <div class="about-img mb-30">
-                        <div class="about-img__thumb wow fadeInUp2 animated" data-wow-delay='.1s'>
-                            <img src="assets/img/about/01.jpg" alt="">
-                        </div>
-                        <div class="about-img__style-text wow fadeInUp2 animated" data-wow-delay='.3s'>
-                            <img src="assets/img/about/01.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-6 col-lg-6 col-md-12">
-                    <div class="about__wrapper pl-85">
-                        <div class="section-title text-left mb-35 wow fadeInUp2 animated" data-wow-delay='.1s'>
-                            <h6 class="left-line pl-75">Who We Are</h6>
-                            <h2>We’ve 25+ Years Of Experienced In <br>
-                                <span>Crowd Founding</span></h2>
-                        </div>
-                        <div class="partner-list d-sm-flex align-items-center justify-content-between mb-40 wow fadeInUp2 animated" data-wow-delay='.1s'>
-                            <div class="total-client">
-                                <h4><span>36k </span> Our Global Partner</h4>
-                            </div>
-                            <div class="joint-btn">
-                                <a href="contact.html" class="theme_btn theme_btn2 ">join with us <i
-                                        class="far fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                        <div class="funding-list">
-                            <div class="crowd-box d-flex align-items-center pb-30 mb-40 wow fadeInUp2 animated" data-wow-delay='.1s'>
-                                <div class="crowd-box__icon">
-                                    <i class="flaticon-investment"></i>
-                                </div>
-                                <div class="crowd-box__text">
-                                    <h4>Crowdfounding</h4>
-                                    <p>Sed ut perspiciatis unde omnis iste natus error
-                                        voluptatem accusantium doloremque</p>
-                                </div>
-                            </div>
-                            <div class="crowd-box d-flex align-items-center pb-30 mb-40 wow fadeInUp2 animated" data-wow-delay='.1s'>
-                                <div class="crowd-box__icon">
-                                    <i class="flaticon-crowdfunding-1"></i>
-                                </div>
-                                <div class="crowd-box__text">
-                                    <h4>Highest Success Rates</h4>
-                                    <p>Sed ut perspiciatis unde omnis iste natus error
-                                        voluptatem accusantium doloremque</p>
-                                </div>
-                            </div>
-                            <a href="about.html" class="theme_btn theme_btn_bg wow fadeInUp2 animated" data-wow-delay='.1s'>Learn more <i
-                                    class="far fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+   @include('frontend.include.who_we_are')
+   @include('frontend.include.support_us')
     <!--about-us-area end-->
     <!--donation-area start-->
-    <section class="donation-area pt-125 pb-100" style="background-image:url(assets/img/events/01.jpg)">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-8 offset-xl-2">
-                    <div class="donation-wrapper">
-                        <div class="section-title white-title text-center mb-40 wow fadeInUp2 animated"
-                            data-wow-delay='.1s'>
-                            <h6 class="left-line pl-75 pr-75">Donate Now</h6>
-                            <h2>Raise Your Hand To The<br>
-                                <span>Right Place</span></h2>
-                        </div>
-                        <ul class="btn-list text-center mb-30 wow fadeInUp2 animated" data-wow-delay='.3s'>
-                            <li><a class="theme_btn theme_btn_bg" href="about.html"
-                                    data-animation="fadeInLeft" data-delay=".7s">explore more <i
-                                        class="far fa-arrow-right"></i></a>
-                            </li>
-                            <li><a class="theme_btn theme-border-btn" href="contact.html"
-                                    data-animation="fadeInLeft" data-delay=".7s">donate now <i
-                                        class="far fa-arrow-right"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    @include('frontend.include.donate')
     <!--donation-area end-->
     <!--project-area start-->
-    <section class="project-area grey-bg pt-125 pb-100">
+    {{-- <section class="project-area grey-bg pt-125 pb-100">
         <div class="container">
             <div class="row">
                 <div class="col-xl-10 offset-xl-1">
@@ -395,7 +182,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!--project-area end-->
     <!--subscribe-area start-->
     <section class="subscribe-area">
@@ -426,7 +213,7 @@
     </section>
     <!--subscribe-area end-->
     <!--team-area start-->
-    <section class="team-area pt-125 pb-100">
+    {{-- <section class="team-area pt-125 pb-100">
         <div class="container">
             <div class="row">
                 <div class="col-xl-10 offset-xl-1">
@@ -604,10 +391,10 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!--team-area end-->
     <!--counter-area start-->
-    <section class="counter-area heding-bg pt-130 pb-100" style="background-image: url(assets/img/bg/03.png);">
+    {{-- <section class="counter-area heding-bg pt-130 pb-100" style="background-image: url(assets/img/bg/03.png);">
         <div class="container">
             <div class="row">
                 <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6">
@@ -640,10 +427,10 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!--counter-area end-->
     <!--testimonial-area start-->
-    <section class="testimonial-area theme-bg2 pt-125 pb-130" style="background-image:url(assets/img/bg/04.png);">
+    {{-- <section class="testimonial-area theme-bg2 pt-125 pb-130" style="background-image:url(assets/img/bg/04.png);">
         <div class="container">
             <div class="row">
                 <div class="col-xl-10 offset-xl-1">
@@ -739,7 +526,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!--testimonial-area end-->
     <!--brand-area start-->
     <section class="brand-area grey-bg2 pt-130">
@@ -805,76 +592,7 @@
         </div>
     </section>
     <!--brand-area end-->
-    <!--blog-area start-->
-    <section class="blog-area pt-130 pb-100">
-        <div class="container">
-            <div class="row no-gutters">
-                <div class="col-xl-4 col-lg-8 col-md-12">
-                    <div class="blog-wrapper mb-30">
-                        <div class="section-title text-left mb-70 wow fadeInUp2 animated" data-wow-delay='.1s'>
-                            <h6 class="left-line pl-75 pr-75">Latest News</h6>
-                            <h2>Every Update<br>
-                                <span>News & Blog</span></h2>
-                            <p>Sedut perspiciatis unde omnis iste natus error 
-                                sit voluptatem accse doloremque laudantium 
-                                totam rem aperiam eaque ipsa quae abillo</p>
-                            <a href="blog-details.html" class="theme_btn theme_btn2 theme_btn_bg_02">view all news <i
-                                    class="far fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp2 animated" data-wow-delay='.3s'>
-                    <div class="blogs mb-30 mr-15">
-                        <div class="blogs__thumb pos-rel mb-45">
-                           <div class="blogs__thumb--img">
-                                <img src="assets/img/blog/01.jpg" alt="">
-                           </div>
-                            <a class="blog-tag" href="blog-details.html">Education</a>
-                        </div>
-                        <div class="blogs__content">
-                            <div class="blogs__content--meta mb-15">
-                                <span><i class="far fa-calendar-alt"></i> 05 Nov 2020</span>
-                                <span><i class="far fa-comment"></i> Comment (03)</span>
-                            </div>
-                            <h4 class="mb-20"><a href="blog-details.html">How Make Cross-Browser Testing More Lambda.</a></h4>
-                            <ul class="project-manager">
-                                <li><a href="#"><img src="assets/img/blog/03.png" alt="">
-                                        <span>David Zon</span></a></li>
-                                <li>
-                                    <a class="more_btn_02" href="blog-details.html">Read more <i class="far fa-arrow-right"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp2 animated" data-wow-delay='.5s'>
-                    <div class="blogs mb-30 ml-15">
-                        <div class="blogs__thumb pos-rel mb-45">
-                           <div class="blogs__thumb--img">
-                                <img src="assets/img/blog/02.jpg" alt="">
-                           </div>
-                            <a class="blog-tag" href="blog-details.html">Education</a>
-                        </div>
-                        <div class="blogs__content">
-                            <div class="blogs__content--meta mb-15">
-                                <span><i class="far fa-calendar-alt"></i> 05 Nov 2020</span>
-                                <span><i class="far fa-comment"></i> Comment (03)</span>
-                            </div>
-                            <h4 class="mb-20"><a href="blog-details.html">How Make Cross-Browser Testing More Lambda.</a></h4>
-                            <ul class="project-manager">
-                                <li><a href="#"><img src="assets/img/blog/04.png" alt="">
-                                        <span>David Zon</span></a></li>
-                                <li>
-                                    <a class="more_btn_02" href="blog-details.html">Read more <i class="far fa-arrow-right"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--blog-area end-->
+   
     <!--cta-area start-->
     <section class="cta-area theme-bg pt-55 pb-25">
         <div class="container">
@@ -882,7 +600,7 @@
                 <div class="col-xl-9 col-lg-9 col-md-8">
                     <div class="cta-wrapper wow fadeInUp2 animated" data-wow-delay='.1s'>
                         <div class="section-title mb-30">
-                            <h2>Become Our <b>Premium</b> Partner ?</h2>
+                            <h2>Want to <b>Partner</b> With Us ?</h2>
                         </div>
                     </div>
                 </div>

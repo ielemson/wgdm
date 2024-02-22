@@ -166,7 +166,7 @@ data-aos-easing="ease-in-sine">
                         </div>
                         <div class="contact-box__content">
                             <h4>Locations</h4>
-                            <h5>205 Main Street, USA</h5>
+                            <h5>{{ $setting->address }}</h5>
                         </div>
                     </div>
                 </div>
@@ -177,7 +177,7 @@ data-aos-easing="ease-in-sine">
                         </div>
                         <div class="contact-box__content">
                             <h4>Email Us</h4>
-                            <h5><a href="https://www.devsnews.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b0c3c5c0c0dfc2c4f0d7ddd1d9dc9ed3dfdd">[email&#160;protected]</a></h5>
+                            <h5><a href="mailto:{{ $setting->email }}" class="__cf_email__">{{ $setting->email }}</a></h5>
                         </div>
                     </div>
                 </div>
@@ -188,7 +188,7 @@ data-aos-easing="ease-in-sine">
                         </div>
                         <div class="contact-box__content">
                             <h4>Phone Us</h4>
-                            <h5>+012 (345) 678 99</h5>
+                            <h5>{{ $setting->phone }}</h5>
                         </div>
                     </div>
                 </div>
