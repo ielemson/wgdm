@@ -32,7 +32,7 @@
 
     <!-- side-mobile-menu start -->
     <nav class="side-mobile-menu">
-        <ul id="mobile-menu-active">
+        {{-- <ul id="mobile-menu-active">
             <li>
                 <a href="{{ url("/") }}">Home</a>
                 
@@ -49,6 +49,19 @@
                 
             </li>
             <li><a href="{{ route("contact.us") }}">Contacts Us</a></li>
+        </ul> --}}
+        <ul id="mobile-menu-active">
+            <li><a class="{{ request()->is('/') ? 'active' : '' }}" href="{{ url('/') }}">Home</a></li>
+            <li><a href="{{ route('about.us') }}">About</a></li>
+            <li><a href="#">Events</a>
+               
+            </li>
+            <li><a href="#">Project</a>
+            <li><a href="#">Blogs</a>
+                
+            </li>
+           
+            <li><a href="{{ route('contact.us') }}">Contact</a></li>
         </ul>
     </nav>
     <!-- side-mobile-menu end -->

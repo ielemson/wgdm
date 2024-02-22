@@ -66,7 +66,7 @@
                         </p>
                         <br>
                         <p>
-                            <h2><span>Our Work</span></h2>
+                            <h2 style="font-size:2rem ! important">Our Work</h2>
                             We serve in downtrodden communities; changing conceptions and human behaviors, by funding individual beneficiaries in commerce, irrespective of race, creed, and or belief; while adhering to:
                             “A RESOLUTION PROJECT FOR MORAL EXCELENCE”
                             It’s a strict adherence to us, as to develop the sense of belonging in human endeavour; and not despised, being a citizen of this nation by provision of necessary guideline, development, and funding investment for every of our beneficiary. </p>

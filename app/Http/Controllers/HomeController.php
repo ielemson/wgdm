@@ -260,7 +260,8 @@ class HomeController extends Controller
 
         if ($validator->fails()) {
 
-            return response()->json(['error'=>$validator->errors()->all()]);
+            // return response()->json(['error'=>$validator->errors()->all()]);
+            return redirect('contact-us')->with('error', "An error occured, try again");
 
         }
 
@@ -273,14 +274,16 @@ class HomeController extends Controller
         ];
         
         // $userEmail = $request->email;
-        Mail::to("info@fmapmedia.com")->send(new ContactMessage($details));
+        Mail::to("ielemson@gmail.com")->send(new ContactMessage($details));
  
         if (Mail::failures()) {
             //  return response()->Fail('Sorry! Please try again latter');
-            return response()->json(['status'=>400,'data'=>'Message was not sent, please check your network and try again']);
+            // return response()->json(['status'=>400,'data'=>'Message was not sent, please check your network and try again']);
+            return redirect('contact-us')->with('error', 'Message was not sent, please check your network and try again');
         }else{
             //  return response()->success('Great! Successfully send in your mail');
-            return response()->json(['status'=>200,'msg'=>'Great! we have received your message.']);
+            // return response()->json(['status'=>200,'msg'=>'Great! we have received your message.']);
+            return redirect('contact-us')->with('success', 'Great! we have received your message');
            }
       
         // return response()->json(['data'=>$request->all()]);

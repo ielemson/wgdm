@@ -5,7 +5,7 @@
 # Phone: {{$details['phone_number']}}  <br>
 {{$details['message_body']}}
 
-@component('mail::button', ['url' => 'https://fmapmedia.com/'])
+@component('mail::button', ['url' => 'https://wgdm.org/'])
 www.fmapmedia.com
 @endcomponent
 

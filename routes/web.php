@@ -41,6 +41,7 @@ use App\Http\Controllers\Frontend\PaystackController;
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/about-us', [HomeController::class, 'aboutUs'])->name('about.us');
 Route::get('/contact-us', [HomeController::class, 'contactUs'])->name('contact.us');
+Route::post('contact/form', [HomeController::class, 'CotactForm'])->name('contact.form');
 Route::get('/team', [HomeController::class, 'companyTeam'])->name('company.profiles');
 Route::get('/profile/{id}', [HomeController::class, 'companyProfile'])->name('company.profile');
 Route::get('/our-service/{id}', [HomeController::class, 'companyService'])->name('company.service');
@@ -53,7 +54,6 @@ Route::get('/news/{id}', [HomeController::class, 'single_news'])->name('front.si
 Route::get('/news/category/{slug}', [HomeController::class, 'newsCategory'])->name('front.news.category');
 Route::post('/user/pay/register', [HomeController::class, 'StoreUser'])->name('user.cart.register');
 Route::post('user/pay/login', [HomeController::class, 'LoginUser'])->name('user.cart.login');
-Route::post('contact/form', [HomeController::class, 'CotactForm'])->name('contact.form');
 Route::get('/reload-captcha', [HomeController::class, 'reloadCaptcha']);
 Route::get('/user/order/cancel', function () {
 	return view('frontend.pages.cancelpayment');

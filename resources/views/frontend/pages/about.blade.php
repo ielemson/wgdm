@@ -11,26 +11,7 @@
 <main>
         
     <!--page-title-area start-->
-    <section class="page-title-area" style="background-image:url(assets/img/bg/page-title-bg.jpg);">
-        <div class="right-border-shape">
-            <img src="assets/img/shape/02.png" alt="">
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-6 offset-xl-3">
-                    <div class="page-title-wrapper text-center">
-                        <h1 class="page-title wow fadeInUp2 animated" data-wow-delay='.1s'>About Us</h1>
-                        <div class="breadcrumb">
-                            <ul class="breadcrumb-list wow fadeInUp2 animated" data-wow-delay='.3s'>
-                                <li><a href="index.html">Home <i class="far fa-chevron-right"></i></a></li>
-                                <li><a class="active" href="#">About Us</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  @include('frontend.include.page_title',['bannerTitle'=>'About Us','bannerImg'=>'assets/img/about/banner.jpg'])
     <!--page-title-area area-->
     <!--about-us-area start-->
     <section class="about-us-area-03 pt-130 pb-85">
@@ -39,10 +20,9 @@
                 <div class="col-xl-5 col-lg-6 col-md-12">
                     <div class="about-img mb-50">
                         <div class="about-img__thumb wow fadeInUp2 animated" data-wow-delay='.1s'>
-                            <img src="assets/img/about/03.jpg" alt="">
+                            <img src="{{ asset('assets/img/about/about.jpg') }}" alt="">
                         </div>
-                        /div>
-                     
+                        
                     </div>
                 </div>
                 <div class="col-xl-7 col-lg-6 col-md-12">
@@ -53,7 +33,7 @@
                         </div>
                         <p>Wilderness Guides & Development Mission Inc., is a non-profit Organization, managed under the discretion of the professionals, since 2016; for the elevations of the less-privileged.
                         </p>
-                        <h6>Our Work</h6>
+                        <h3>Our Work</h3>
                         <p>We serve in downtrodden communities; changing conceptions and human behaviors, by funding individual beneficiaries in commerce, irrespective of race, creed, and or belief; while adhering to:
                             “ <b>A RESOLUTION PROJECT FOR MORAL EXCELENCE</b> ”
                             It’s a strict adherence to us, as to develop the sense of belonging in human endeavour; and not despised, being a citizen of this nation by provision of necessary guideline, development, and funding investment for every of our beneficiary.  
@@ -360,7 +340,7 @@
     </section> --}}
     <!--team-area end-->
     <!--donation-area start-->
-    <section class="donation-area pt-125 pb-100" style="background-image:url(assets/img/events/01.jpg)">
+    <section class="donation-area pt-125 pb-100" style="background-image:url(assets/img/about/bg.jpg)">
         <div class="container">
             <div class="row">
                 <div class="col-xl-8 offset-xl-2">
@@ -488,66 +468,7 @@
     <!--testimonial-area end-->
     <!--brand-area start-->
     <section class="brand-area grey-bg2 pt-130">
-        <div class="container custom-container-02">
-            <div class="row brand-active pb-125">
-                <div class="col-xl-2 wow fadeInUp2 animated" data-wow-delay='.1s'>
-                    <div class="brand-slide text-center">
-                        <div class="brand-img">
-                            <a href="#"><img src="assets/img/brand/01.png" alt=""></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-2 wow fadeInUp2 animated" data-wow-delay='.3s'>
-                    <div class="brand-slide text-center">
-                        <div class="brand-img">
-                            <a href="#"><img src="assets/img/brand/02.png" alt=""></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-2 wow fadeInUp2 animated" data-wow-delay='.5s'>
-                    <div class="brand-slide text-center">
-                        <div class="brand-img">
-                            <a href="#"><img src="assets/img/brand/03.png" alt=""></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-2 wow fadeInUp2 animated" data-wow-delay='.7s'>
-                    <div class="brand-slide text-center">
-                        <div class="brand-img">
-                            <a href="#"><img src="assets/img/brand/04.png" alt=""></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-2 wow fadeInUp2 animated" data-wow-delay='.9s'>
-                    <div class="brand-slide text-center">
-                        <div class="brand-img">
-                            <a href="#"><img src="assets/img/brand/05.png" alt=""></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-2 wow fadeInUp2 animated" data-wow-delay='.11s'>
-                    <div class="brand-slide text-center">
-                        <div class="brand-img">
-                            <a href="#"><img src="assets/img/brand/01.png" alt=""></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-2 wow fadeInUp2 animated" data-wow-delay='.1s'>
-                    <div class="brand-slide">
-                        <div class="brand-img">
-                            <a href="#"><img src="assets/img/brand/02.png" alt=""></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-2 wow fadeInUp2 animated" data-wow-delay='.3s'>
-                    <div class="brand-slide">
-                        <div class="brand-img">
-                            <a href="#"><img src="assets/img/brand/03.png" alt=""></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+       
     </section>
     <!--brand-area end-->
     <!--blog-area start-->
@@ -627,14 +548,14 @@
                 <div class="col-xl-9 col-lg-9 col-md-8">
                     <div class="cta-wrapper wow fadeInUp2 animated" data-wow-delay='.1s'>
                         <div class="section-title mb-30">
-                            <h2>Become Our <b>Premium</b> Partner ?</h2>
+                            <h2>Want to <b>Partner With Us? </b></h2>
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-4">
                     <div class="cta-wrapper">
                         <div class="cta-btn text-left text-md-right wow fadeInUp2 animated" data-wow-delay='.1s'>
-                            <a class="theme_btn theme_btn_bg" href="contact.html">contact us <i
+                            <a class="theme_btn theme_btn_bg" href="{{ route("contact.us") }}">contact us <i
                                 class="far fa-arrow-right"></i></a>
                         </div>
                     </div>

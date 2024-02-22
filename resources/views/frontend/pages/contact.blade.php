@@ -125,26 +125,7 @@ data-aos-easing="ease-in-sine">
 <main>
         
     <!--page-title-area start-->
-    <section class="page-title-area" style="background-image:url(assets/img/bg/page-title-bg.jpg);">
-        <div class="right-border-shape">
-            <img src="assets/img/shape/02.png" alt="">
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-10 offset-xl-1">
-                    <div class="page-title-wrapper text-center">
-                        <h1 class="page-title wow fadeInUp2 animated" data-wow-delay='.1s'>Contact Us</h1>
-                        <div class="breadcrumb">
-                            <ul class="breadcrumb-list wow fadeInUp2 animated" data-wow-delay='.3s'>
-                                <li><a href="index.html">Home <i class="far fa-chevron-right"></i></a></li>
-                                <li><a class="active" href="#">Contact Us</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    @include('frontend.include.page_title',['bannerTitle'=>'Contact Us','bannerImg'=>'assets/img/about/banner.jpg'])
     <!--page-title-area area-->
     <!--contact-box-area start-->
     <section class="contact-box-area pb-80 pt-125">
@@ -202,12 +183,18 @@ data-aos-easing="ease-in-sine">
         <div class="row">
             <div class="col-xl-12">
                 <div class="post-form-area contact-form pt-125">
+                    <div class="mx-auto">
+                        @include('include.message')
+                    </div>
+                    <form action="{{ route('contact.form') }}" method="POST"  id="contactForm">
+                        @csrf
                     <div class="row">
+                        
                         <div class="col-xl-6 col-lg-6 col-md-6">
                             <div class="input-box">
                                 <h5>Your Full Name</h5>
                                 <div class="input-text mb-35">
-                                    <input type="text" class="form-control" placeholder="Full Name Here">
+                                    <input type="text" class="form-control" placeholder="Full Name Here" name="name" required>
                                 </div>
                             </div>
                         </div>
@@ -215,7 +202,7 @@ data-aos-easing="ease-in-sine">
                             <div class="input-box mb-35">
                                 <h5>Your Email Address</h5>
                                 <div class="input-text input-mail">
-                                    <input type="text" class="form-control" placeholder="Email Here">
+                                    <input type="text" class="form-control" placeholder="Email Here" name="email" required>
                                 </div>
                             </div>
                         </div>
@@ -223,7 +210,7 @@ data-aos-easing="ease-in-sine">
                             <div class="input-box mb-35">
                                 <h5>Phone Number</h5>
                                 <div class="input-text input-phone">
-                                    <input type="text" class="form-control" placeholder="Write Your Phone Number">
+                                    <input type="text" class="form-control" placeholder="Write Your Phone Number" name="phone_number" required>
                                 </div>
                             </div>
                         </div>
@@ -231,7 +218,26 @@ data-aos-easing="ease-in-sine">
                             <div class="input-box mb-35">
                                 <h5>Subject</h5>
                                 <div class="input-text input-sub">
-                                    <input type="text" class="form-control" placeholder="I Would LIke To">
+                                    <input type="text" class="form-control" placeholder="I Would LIke To" name="msg_subject" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6">
+                            <div class="input-box mb-35">
+                               <h5>Captcha Code</h5>
+                                <div class="input-text captcha">
+                                    <span>{!! captcha_img() !!}</span>
+                                    <button type="button" class="btn btn-danger" class="reload" id="reload">
+                                        &#x21bb;
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6">
+                            <div class="input-box mb-35">
+                                <h5>Enter Captcha</h5>
+                                <div class="input-text input-sub">
+                                    <input type="text" class="form-control" placeholder="Enter Captcha Code Here" name="captcha" required>
                                 </div>
                             </div>
                         </div>
@@ -239,17 +245,18 @@ data-aos-easing="ease-in-sine">
                             <div class="input-box mb-35">
                                 <h5>Leave A Message</h5>
                                 <div class="input-text input-message">
-                                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Write Your Message"></textarea>
+                                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Write Your Message" name="message_body" required></textarea>
                                 </div>
                             </div>
                         </div>
                         <div class="col-xl-12 col-lg-12 col-md-6">
                             <div class="msg-btn text-md-center">
-                                <a class="theme_btn theme_btn_bg" href="#">send  message <i
-                                        class="far fa-arrow-right"></i></a>
+                                <button type="submit" class="theme_btn theme_btn_bg" href="#">send  message <i
+                                        class="far fa-arrow-right"></i></button>
                             </div>
                         </div>
                     </div>
+                   </form>
                 </div>
             </div>
         </div>
@@ -294,6 +301,7 @@ data-aos-easing="ease-in-sine">
     <!--cta-area end-->
 </main>
 @include('frontend.include.footer')
+@endsection
 @push('extra-scripts')
 <script type="text/javascript">
     $('#reload').click(function () {
@@ -307,4 +315,3 @@ data-aos-easing="ease-in-sine">
     });
 </script>
 @endpush
-@endsection

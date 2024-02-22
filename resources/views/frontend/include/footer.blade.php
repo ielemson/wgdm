@@ -11,7 +11,7 @@
                             <li><a href="{{ route('about.us') }}">About us</a></li>
                             <li><a href="{{ route('login') }}">Login</a></li>
                             <li><a href="#">How It Works</a></li>
-                            <li><a href="#">News & articles</a></li>
+                            <li><a href="https://palpresmedia.com.ng">News & articles</a></li>
                             <li><a href="{{ route('contact.us') }}">Contact us</a></li>
                         </ul>
                     </div>

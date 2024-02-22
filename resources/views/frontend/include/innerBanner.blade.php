@@ -34,8 +34,7 @@
                 <div class="col-xl-5 col-lg-5 d-none d-xl-block">
                     <div class="top-cta text-right">
                         <span class="media-link"><i class="far fa-envelope"></i> <a href="#" class="__cf_email__">{{ $setting->phone }}</a></span>
-                        <span class="media-link"><i class="far fa-map-marker-alt"></i> {{ $setting->address }}
-                            USA</span>
+                        <span class="media-link"><i class="far fa-map-marker-alt"></i> {{ $setting->address }}</span>
                     </div>
                 </div>
             </div>
@@ -54,16 +53,17 @@
                     <div class="main-menu main-menu-02 d-none d-lg-block">
                         <nav >
                             <ul>
-                                <li><a class="active" href="{{ url('/') }}">Home</a></li>
-                                <li><a href="{{ route('about.us') }}">About</a></li>
-                                <li><a href="#">Events</a>
+                                <li><a class="{{ request()->is('/') ? 'active' : '' }}" href="{{ url('/') }}">Home <i class="far fa-home"></i></a></li>
+                                <li><a class="{{ request()->is('about-us') ? 'active' : '' }}" href="{{ route('about.us') }}">About</a> <i class="far fa-info-circle"></i></li>
+                                <li><a href="#">Events <i class="far fa-calendar"></i></a>
                                    
                                 </li>
-                                <li><a href="#">Project</a><li><a href="#">Blogs</a>
+                                <li><a href="#">Project <i class="far fa-project-diagram"></i></a>
+                                <li><a href="#">Blogs <i class="far fa-blog"></i></a>
                                     
                                 </li>
                                
-                                <li><a href="{{ route('contact.us') }}">Contact</a></li>
+                                <li><a class="{{ request()->is('contact-us') ? 'active' : '' }} " href="{{ route('contact.us') }}">Contact</a> <i class="far fa-address-book"></i></li>
                             </ul>
                         </nav>
                     </div>

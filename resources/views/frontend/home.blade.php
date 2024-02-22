@@ -531,64 +531,7 @@
     <!--brand-area start-->
     <section class="brand-area grey-bg2 pt-130">
         <div class="container custom-container-02">
-            <div class="row brand-active pb-125">
-                <div class="col-xl-2">
-                    <div class="brand-slide text-center wow fadeInUp2 animated" data-wow-delay='.1s'>
-                        <div class="brand-img">
-                            <a href="#"><img src="assets/img/brand/01.png" alt=""></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-2">
-                    <div class="brand-slide text-center wow fadeInUp2 animated" data-wow-delay='.3s'>
-                        <div class="brand-img">
-                            <a href="#"><img src="assets/img/brand/02.png" alt=""></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-2">
-                    <div class="brand-slide text-center wow fadeInUp2 animated" data-wow-delay='.5s'>
-                        <div class="brand-img">
-                            <a href="#"><img src="assets/img/brand/03.png" alt=""></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-2">
-                    <div class="brand-slide text-center wow fadeInUp2 animated" data-wow-delay='.7s'>
-                        <div class="brand-img">
-                            <a href="#"><img src="assets/img/brand/04.png" alt=""></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-2">
-                    <div class="brand-slide text-center wow fadeInUp2 animated" data-wow-delay='.9s'>
-                        <div class="brand-img">
-                            <a href="#"><img src="assets/img/brand/05.png" alt=""></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-2">
-                    <div class="brand-slide text-center wow fadeInUp2 animated" data-wow-delay='.3s'>
-                        <div class="brand-img">
-                            <a href="#"><img src="assets/img/brand/01.png" alt=""></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-2">
-                    <div class="brand-slide text-center wow fadeInUp2 animated" data-wow-delay='.5s'>
-                        <div class="brand-img">
-                            <a href="#"><img src="assets/img/brand/02.png" alt=""></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-2">
-                    <div class="brand-slide text-center wow fadeInUp2 animated" data-wow-delay='.7s'>
-                        <div class="brand-img">
-                            <a href="#"><img src="assets/img/brand/03.png" alt=""></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          
         </div>
     </section>
     <!--brand-area end-->
