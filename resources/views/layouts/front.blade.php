@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="{{$setting->meta_description}}">
     <meta name="keywords" content="{{$setting->meta_title}}">
+    <link rel="icon" type="image/x-icon" href="{{ asset("assets/images/settings/$setting->website_favicon") }}">
     <!-- CSS here -->
     <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/owl.carousel.min.css') }}">

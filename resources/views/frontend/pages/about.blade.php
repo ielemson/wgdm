@@ -548,7 +548,7 @@
                 <div class="col-xl-9 col-lg-9 col-md-8">
                     <div class="cta-wrapper wow fadeInUp2 animated" data-wow-delay='.1s'>
                         <div class="section-title mb-30">
-                            <h2>Want to <b>Partner With Us? </b></h2>
+                            <h2>Want to <b> Partner </b> With Us? </h2>
                         </div>
                     </div>
                 </div>

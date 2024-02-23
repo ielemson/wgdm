@@ -550,7 +550,7 @@
                 <div class="col-xl-3 col-lg-3 col-md-4">
                     <div class="cta-wrapper">
                         <div class="cta-btn text-md-right wow fadeInUp2 animated" data-wow-delay='.1s'>
-                            <a class="theme_btn theme_btn_bg" href="contact.html">contact us <i
+                            <a class="theme_btn theme_btn_bg" href="{{ route("contact.us") }}">contact us <i
                                 class="far fa-arrow-right"></i></a>
                         </div>
                     </div>

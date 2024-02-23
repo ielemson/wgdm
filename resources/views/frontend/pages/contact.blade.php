@@ -283,14 +283,14 @@ data-aos-easing="ease-in-sine">
                 <div class="col-xl-9 col-lg-9 col-md-8">
                     <div class="cta-wrapper wow fadeInUp2 animated" data-wow-delay='.1s'>
                         <div class="section-title mb-30">
-                            <h2>Become Our <b>Premium</b> Partner ?</h2>
+                            <h2>Want to <b> Partner </b> With Us? </h2>
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-4">
                     <div class="cta-wrapper wow fadeInUp2 animated" data-wow-delay='.1s'>
                         <div class="cta-btn tex-md-right">
-                            <a class="theme_btn theme_btn_bg" href="contact.html">contact us <i
+                            <a class="theme_btn theme_btn_bg" href="{{ route("contact.us") }}">contact us <i
                                 class="far fa-arrow-right"></i></a>
                         </div>
                     </div>
