@@ -25,6 +25,7 @@ class GalleryController extends Controller
        $request->validate([
         'title'       => 'required',
         'status'   => 'required',
+        'location'   => 'required',
         'image'        => 'required|image|mimes:jpg,png,jpeg,webp'
     ]);
 
@@ -42,10 +43,10 @@ class GalleryController extends Controller
     }
 
     Gallery::create([
-        // 'partner'           => $request->partner,
-        'title'       => 'required',
-        'status'   => 'required',
-        'image'        => 'required|image|mimes:jpg,png,jpeg,webp'
+        'location'   => $request->location,
+        'title'       => $request->title,
+        'status'   => $request->status,
+        'image'        => $request->imageName
        
     ]);
 
@@ -73,13 +74,15 @@ class GalleryController extends Controller
         $gallery = Gallery::where('id',$id)->first();
         // dd($gallery);
             // dd($request->all());
-          
+           
+     
+         if ($request->hasFile('image')) {
+
             $image_path = public_path('wgdm/images/gallery/'.$gallery->image);
             if(file_exists($image_path)){
               unlink($image_path);
             }
-     
-         if ($request->hasFile('image')) {
+            
              $path = public_path('wgdm/images/gallery/');
              !is_dir($path) &&
                  mkdir($path, 0777, true);
@@ -89,21 +92,19 @@ class GalleryController extends Controller
              ResizeImage::make($request->file('image'))
             //  ->resize(570,480)
                  ->save($path . $imageName);
-
-
+                    $gallery->location    = $request->location;
                     $gallery->title    = $request->title;
                     $gallery->image       = $imageName;
                     $gallery->status    = $request->status;
                     $gallery->save();
                 
          }else{
+            $gallery->location    = $request->location;
             $gallery->title    = $request->title;
             $gallery->status    = $request->status;
             $gallery->save();
          }
          
-                   
-
          return redirect()->back()->with('success','Gallery updated successfully!');
     }
 }

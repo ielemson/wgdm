@@ -68,6 +68,18 @@
 
                                 <div class="col-md-4">
                                     <div class="form-group">
+                                        <label>{{ __('Location')}}</label>
+                                        {{-- <input type="file" name="image" class="file-upload-default" required> --}}
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="location" placeholder="location" required>
+                                            {{-- <span class="input-group-append">
+                                            <button class="file-upload-browse btn btn-primary" type="button">{{ __('Upload')}}</button>
+                                            </span> --}}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
                                         <label>{{ __('Image')}}</label>
                                         {{-- <input type="file" name="image" class="file-upload-default" required> --}}
                                         <div class="form-group">

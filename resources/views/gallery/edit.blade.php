@@ -47,9 +47,7 @@
                         <form class="forms-sample" method="POST" enctype="multipart/form-data" action="{{route('gallery.update',$gallery->id)}}">
                             @csrf
                             <div class="row">
-                                <div class="col-sm-4">
-
-                                </div>
+                                
                                 <div class="col-sm-4">
 
                                     <div class="form-group">
@@ -70,10 +68,23 @@
 
                                 <div class="col-md-4">
                                     <div class="form-group">
+                                        <label>{{ __('Location')}}</label>
+                                        {{-- <input type="file" name="image" class="file-upload-default" required> --}}
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="location" placeholder="location"  value="{{ $gallery->location }}" required>
+                                            {{-- <span class="input-group-append">
+                                            <button class="file-upload-browse btn btn-primary" type="button">{{ __('Upload')}}</button>
+                                            </span> --}}
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="form-group">
                                         <label>{{ __('Image')}}</label>
                                         {{-- <input type="file" name="image" class="file-upload-default" required> --}}
                                         <div class="form-group">
-                                            <input type="file" class="form-control" name="image" required>
+                                            <input type="file" class="form-control" name="image">
                                             {{-- <span class="input-group-append">
                                             <button class="file-upload-browse btn btn-primary" type="button">{{ __('Upload')}}</button>
                                             </span> --}}
@@ -102,7 +113,7 @@
                                 </div>
                            
                                 
-                                <div class="col-md-12">
+                                <div class="col-md-12 mt-5">
                                     <div class="form-group">
                                         <button type="submit" class="btn btn-primary">{{ __('Submit')}}</button>
                                     </div>
