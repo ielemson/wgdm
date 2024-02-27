@@ -92,14 +92,12 @@ class GalleryController extends Controller
 
 
                     $gallery->title    = $request->title;
-                    $gallery->partner   = $request->partner;
                     $gallery->image       = $imageName;
                     $gallery->status    = $request->status;
                     $gallery->save();
                 
          }else{
             $gallery->title    = $request->title;
-            $gallery->partner   = $request->partner;
             $gallery->status    = $request->status;
             $gallery->save();
          }
