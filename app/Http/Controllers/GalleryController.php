@@ -42,9 +42,10 @@ class GalleryController extends Controller
     }
 
     Gallery::create([
-        'title'             => $request->title,
-        'image'              => $imageName,
-        'status'             => $request->status,
+        // 'partner'           => $request->partner,
+        'title'       => 'required',
+        'status'   => 'required',
+        'image'        => 'required|image|mimes:jpg,png,jpeg,webp'
        
     ]);
 
