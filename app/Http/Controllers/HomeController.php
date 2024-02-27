@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Mail\ContactMessage;
 use App\Models\Features;
+use App\Models\Gallery;
 use App\Models\News;
 use App\Models\NewsCategory;
 use App\Models\Product;
@@ -35,7 +36,8 @@ class HomeController extends Controller
         $seo_description = "A Resolution Project for Moral Excellence “
         Being our Official motto, to be affixed in a prominent part of the website";
         $seo_keywords = "charity, homeless, help charity organization";
-        return view('frontend.home', compact('news','services','features','seo_title','seo_description','seo_keywords','sliders'));
+        $galleries = Gallery::where('status',1)->get();
+        return view('frontend.home', compact('galleries','news','services','features','seo_title','seo_description','seo_keywords','sliders'));
     }
 
     public function aboutUs(){
@@ -120,17 +122,17 @@ class HomeController extends Controller
 
     public function news(){
         $services = Service::where('status',1)->get();
-        $news = News::where('status',1)->orderBy('id', 'DESC')->paginate(10);
+        $blogs = News::where('status',1)->orderBy('id', 'DESC')->paginate(10);
         $categories = NewsCategory::where('status',1)->get();
         $topnewslist = News::latest()->whereHas('category')->where('status',1)->orderBy('id', 'DESC')->paginate(10);
-        return view('frontend.pages.news',compact('services','news','categories','topnewslist'));
+        return view('frontend.pages.blogs',compact('services','blogs','categories','topnewslist'));
     }
 
     public function single_news($slug){
-        $services = Service::where('status',1)->get();
+        // $services = Service::where('status',1)->get();
         $categories = NewsCategory::where('status',1)->get();
-        $single_news = News::where('slug',$slug)->first();
-        return view('frontend.pages.single_news',compact('single_news','services','categories'));
+        $blog = News::where('slug',$slug)->first();
+        return view('frontend.pages.blog',compact('blog','categories'));
     }
 
     public function newsCategory($slug){

@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="{{ asset('assets/css/nice-select.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/slick.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}">
+    <link rel="stylesheet" href="{{ asset("wgdm/lightbox/css/lightbox.min.css") }}">
     @stack('extra-css')
         
 </head>
@@ -53,6 +54,7 @@
     <script src="{{ asset('assets/js/main.js') }}"></script>
     {{-- <script src="https://checkout.flutterwave.com/v3.js"></script> --}}
     <script src="{{ asset('https://unpkg.com/aos@next/dist/aos.js') }}"></script>
+    <script src="{{ asset("wgdm/lightbox/js/lightbox-plus-jquery.min.js") }}"></script>
    
     @stack('extra-scripts')
 </body>

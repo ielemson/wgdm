@@ -23,6 +23,7 @@ use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\Frontend\FlutterwaveController;
 use App\Http\Controllers\Frontend\PaystackController;
+use App\Http\Controllers\GalleryController;
 
 // use Illuminate\Support\Facades\Auth;
 
@@ -49,7 +50,7 @@ Route::get('/our-projects', [HomeController::class, 'companyProjects'])->name('c
 Route::get('/our-feature/{id}', [HomeController::class, 'companyFeature'])->name('company.feature');
 Route::get('/coming-soon', [HomeController::class, 'comingSoon'])->name('coming.soon');
 Route::get('/magazines', [HomeController::class, 'magazines'])->name('magazine.list');
-Route::get('/news', [HomeController::class, 'news'])->name('front.news.list');
+Route::get('/blogs', [HomeController::class, 'news'])->name('frontend.blogs');
 Route::get('/news/{id}', [HomeController::class, 'single_news'])->name('front.single.news');
 Route::get('/news/category/{slug}', [HomeController::class, 'newsCategory'])->name('front.news.category');
 Route::post('/user/pay/register', [HomeController::class, 'StoreUser'])->name('user.cart.register');
@@ -111,10 +112,24 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::get('/clear-cache', [HomeController::class, 'clearCache']);
 
 	// dashboard route  
-	Route::get('/dashboard', function () {
-		return view('pages.dashboard');
-	})->name('dashboard');
+	// Route::get('/dashboard', function () {
+	// 	return view('pages.dashboard');
+	// })->name('dashboard');
 
+	Route::group(['prefix' => 'dashboard'], function () {
+		Route::get('/', function () {
+			return view('pages.dashboard');
+		})->name('dashboard');
+
+	Route::get('/gallery', [GalleryController::class, 'index'])->name('gallery.index');
+	Route::get('gallery/create', [GalleryController::class, 'create'])->name('gallery.create');
+	Route::post('gallery/store', [GalleryController::class, 'store'])->name('gallery.store');
+	});
+
+// Gallery Route:::::
+Route::get('gallery/edit/{id}', [GalleryController::class, 'edit'])->name('gallery.edit');
+Route::post('gallery/update/{id}', [GalleryController::class, 'update'])->name('gallery.update');
+// Gallery Route:::::
 	// Edit Profile
 	Route::post('account/update', [UserController::class, 'profile_update'])->name('account.update');
 	// Service Route

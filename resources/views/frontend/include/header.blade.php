@@ -45,7 +45,7 @@
                                    
                                 </li>
                                 <li><a href="#">Project <i class="far fa-project-diagram"></i></a>
-                                <li><a href="#">Blogs <i class="far fa-blog"></i></a>
+                                <li><a href="{{ route("frontend.blogs") }}">Blogs <i class="far fa-blog"></i></a>
                                     
                                 </li>
                                

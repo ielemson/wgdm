@@ -1,17 +1,3 @@
-{{-- <div class="inner-banner inner-banner-bg">
-    <div class="container">
-        <div class="inner-title text-center">
-            <h3>{{$banner_title ?? ''}}</h3>
-            <ul>
-                <li>
-                    <a href="{{url('/')}}">Home</a>
-                </li>
-                <li>{{$banner_title ?? ''}}</li>
-            </ul>
-        </div>
-    </div>
-</div> --}}
-
  <!-- preloader -->
  <div id="preloader">
     <div class="preloader">
@@ -59,7 +45,7 @@
                                    
                                 </li>
                                 <li><a href="#">Project <i class="far fa-project-diagram"></i></a>
-                                <li><a href="#">Blogs <i class="far fa-blog"></i></a>
+                                <li><a href="{{ route('frontend.blogs') }}">Blogs <i class="far fa-blog"></i></a>
                                     
                                 </li>
                                

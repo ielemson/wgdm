@@ -44,9 +44,9 @@
                 </div>
                 <div class="col-xl-4 col-lg-6 col-md-6  wow fadeInUp2 animated" data-wow-delay='.7s'>
                     <div class="footer__widget fot_abot mb-30 pl-85">
-                        <h5 class="semi-title mb-25">Donation Us</h5>
+                        <h5 class="semi-title mb-25">Partner With  Us</h5>
                         <p class="mb-30">
-                            {{ __('Welcome to Wilderness Guides & Development Mission') }}
+                            {{ __('Wilderness Guides & Development Mission Inc.') }}
                         </p>
                             <div class="subscribe-content foter-subscribe">
                                 <form class="subscribe-form" action="#">

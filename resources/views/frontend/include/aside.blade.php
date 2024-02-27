@@ -22,9 +22,13 @@
         <div class="offset-widget mb-30 pr-10">
             <div class="info-widget info-widget2">
                 <h4 class="offset-title mb-20">Contact Info</h4>
-                <p> <i class="fal fa-address-book"></i> 23/A, Marina Lagos Nigeria</p>
-                <p> <i class="fal fa-phone"></i> +234(0) 123456789</p>
-                <p> <i class="fal fa-envelope-open"></i> <a href="#" class="__cf_email__" data-cfemail="533a3d353c13362b323e233f367d303c3e">info@wgdm.org</a> </p>
+                <p> <i class="fal fa-address-book"></i>
+                    {{ $setting->address }}
+                </p>
+                <p> <i class="fal fa-phone"></i> 
+                    {{ $setting->phone }}
+                </p>
+                <p> <i class="fal fa-envelope-open"></i> <a href="#" class="__cf_email__" data-cfemail="">{{ $setting->email }}</a> </p>
             </div>
         </div>
     </div>
@@ -57,7 +61,7 @@
                
             </li>
             <li><a href="#">Project</a>
-            <li><a href="#">Blogs</a>
+            <li><a href="{{ route("frontend.blogs") }}">Blogs</a>
                 
             </li>
            

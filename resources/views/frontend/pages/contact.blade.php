@@ -269,7 +269,8 @@ data-aos-easing="ease-in-sine">
         <div class="row no-gutters">
             <div class="col-xl-12">
                 <div class="map-area map-02  wow fadeInUp2 animated" data-wow-delay='.1s'>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d29168.42973837642!2d90.37845363955077!3d23.958540550000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1606918909925!5m2!1sen!2sbd"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.2667940746833!2d5.620424073748317!3d6.359504425049951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1040d33f0e15e0e3%3A0xb69358ac90b13a74!2s2%20Egbede%20St%2C%20Use%2C%20Benin%20City%20300103%2C%20Edo!5e0!3m2!1sen!2sng!4v1708957469041!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    {{-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d29168.42973837642!2d90.37845363955077!3d23.958540550000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1606918909925!5m2!1sen!2sbd"></iframe> --}}
                 </div>
             </div>
         </div>

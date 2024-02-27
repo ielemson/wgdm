@@ -14,7 +14,7 @@
                         We affirmed, as though desire to bring to the open your essence of been by us, as we will hopefully unveil your outstretched hand of support towards us; i.e.
                     </p>
                     <div class="row">
-                        <div class="col-xl-6 col-lg-6 col-md-6 wow fadeInUp2 animated" data-wow-delay='.2s'>
+                        <div class="col-xl-12 col-lg-12 col-md-6 wow fadeInUp2 animated" data-wow-delay='.2s'>
                             <div class="single-feature mb-30">
                                 
                                 {{-- <div class="single-feature__content">
@@ -22,7 +22,7 @@
                                     </a></h5>
                                     
                                 </div> --}}
-                                <ul class="goal-list">
+                                <ul class="details-list pt-40 mb-20">
                                     <li>Work and nature of work done</li>
                                     <li>Number of beneficiaries assisted</li>
                                     <li>Able supporters commentaries is incentive</li>

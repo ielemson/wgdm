@@ -163,6 +163,19 @@
 
                     </div>
                 </div>
+
+                <div class="nav-item {{ $segment1 == 'gallery' ? 'active open' : '' }} has-sub">
+                    <a href="#"><i class="ik ik-settings"></i><span>{{ __('Gallery') }}</span></a>
+                    <div class="submenu-content">
+                        <!-- only those have manage_user permission will get access -->
+                        <a href="{{ route('gallery.index') }}"
+                            class="menu-item {{ $segment1 == 'partner' && $segment2 == 'list' ? 'active' : '' }}">{{ __('List Gallery') }}
+                        </a>
+                        <a href="{{ route('gallery.create') }}"
+                            class="menu-item {{ $segment1 == 'service' && $segment2 == 'create' ? 'active' : '' }}">{{ __('Create Gallery') }}
+                        </a>
+                    </div>
+                </div>
                 {{-- CUSTOM SIDEBAR  :::::::::::::::::::::::::::::: ENDS --}}
                 @hasrole('Super Admin')
                     {{-- <div class="nav-lavel">{{ __('Documentation') }} </div>
