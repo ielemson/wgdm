@@ -37,7 +37,7 @@ class GalleryController extends Controller
         // $name = time() . '.' . $request->image->extension();
         $imageName = 'gallery'.'_'.time().uniqid().'.'.$request->image->extension();
         ResizeImage::make($request->file('image'))
-            ->resize(570,480)
+            // ->resize(570,480)
             ->save($path . $imageName);
     }
 
@@ -87,7 +87,7 @@ class GalleryController extends Controller
              // $name = time() . '.' . $request->image->extension();
              $imageName = 'gallery'.'_'.time().uniqid().'.'.$request->image->extension();
              ResizeImage::make($request->file('image'))
-             ->resize(570,480)
+            //  ->resize(570,480)
                  ->save($path . $imageName);
 
 
