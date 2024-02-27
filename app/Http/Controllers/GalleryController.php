@@ -42,7 +42,6 @@ class GalleryController extends Controller
     }
 
     Gallery::create([
-        'partner'           => $request->partner,
         'title'             => $request->title,
         'image'              => $imageName,
         'status'             => $request->status,
