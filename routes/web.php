@@ -39,6 +39,7 @@ use App\Http\Controllers\GalleryController;
 */
 // FRONT PAGE CONTROLLERS PUBLCI ROUTE ::::::::::::::::::::::::::::::::
 // Route::get('/', function () { return view('front.home'); });
+
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/about-us', [HomeController::class, 'aboutUs'])->name('about.us');
 Route::get('/contact-us', [HomeController::class, 'contactUs'])->name('contact.us');
@@ -56,6 +57,7 @@ Route::get('/news/category/{slug}', [HomeController::class, 'newsCategory'])->na
 Route::post('/user/pay/register', [HomeController::class, 'StoreUser'])->name('user.cart.register');
 Route::post('user/pay/login', [HomeController::class, 'LoginUser'])->name('user.cart.login');
 Route::get('/reload-captcha', [HomeController::class, 'reloadCaptcha']);
+Route::get('/donate', [HomeController::class, 'donate'])->name('donate');
 Route::get('/user/order/cancel', function () {
 	return view('frontend.pages.cancelpayment');
 });
@@ -77,11 +79,13 @@ Route::get('/reduce/from-cart/{rowId}', [CartController::class, 'reduceQtyFromCa
 // Check Out Page
 // Checkout Page routes
 Route::get('/checkout-page', [CheckoutController::class, 'checkoutPage'])->name('checkout.page');
+
 // Auth::routes([
 // 	'register' => false, // Registration Routes...
 // 	'reset' => false, // Password Reset Routes...
 // 	'verify' => false, // Email Verification Routes...
 //   ]);
+
 Route::get('login', [LoginController::class, 'showLoginForm'])->name('login');
 Route::post('login', [LoginController::class, 'login']);
 Route::get('register', [RegisterController::class, 'showRegisterForm'])->name('register');
@@ -90,11 +94,11 @@ Route::post('register', [RegisterController::class, 'register']);
 // Route::get('password/forget',  function () { 
 // 	return view('pages.forgot-password'); 
 // })->name('password.forget');
+
 Route::get('password/forget', [ForgotPasswordController::class, 'forgetEmailForm'])->name('password.forget');
 Route::post('password/email', [ForgotPasswordController::class, 'sendResetLinkEmail'])->name('password.email');
 Route::get('password/reset/{token}', [ResetPasswordController::class, 'showResetForm'])->name('password.reset');
 Route::post('password/reset', [ResetPasswordController::class, 'reset'])->name('password.update');
-
 
 Route::group(['middleware' => 'auth'], function () {
 
@@ -399,7 +403,4 @@ Route::post('gallery/update/{id}', [GalleryController::class, 'update'])->name('
 		return view('inventory.people.suppliers');
 	});
 });
-
-
-
 // Route::get('/login-1', function () { return view('pages.login'); });

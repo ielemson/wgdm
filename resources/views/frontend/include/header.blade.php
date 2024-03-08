@@ -32,7 +32,7 @@
             <div class="row align-items-center justify-content-between">
                 <div class="col-xl-2 col-lg-2 col-md-6 col-6">
                     <div class="logo">
-                <a class="logo-img" href="{{ url('/') }}"><img src="{{ asset("assets/images/settings/$setting->website_logo") }}" alt=""></a>
+                <a class="logo-img" href="{{ url('/') }}"><img src="{{ asset("assets/images/settings/$setting->website_logo") }}" alt="" style="width:50px"></a>
                     </div>
                 </div>
                 <div class="col-xl-7 col-lg-9 d-none d-lg-block text-lg-center text-xl-right">
@@ -49,7 +49,7 @@
                                     
                                 </li>
                                
-                                <li><a href="{{ route('contact.us') }}">Contact</a> <i class="far fa-address-book"></i></li>
+                                <li><a href="{{ route('donate') }}">Contact</a> <i class="far fa-address-book"></i></li>
                             </ul>
                         </nav>
                     </div>
@@ -61,7 +61,7 @@
                         </a>
                     </div>
                     <div class="quote-btn d-none d-xl-block">
-                        <a href="{{ route('contact.us') }}" class="theme_btn theme_btn_bg">get a quote <i
+                        <a href="{{ route('donate') }}" class="theme_btn theme_btn_bg">Donate Now<i
                                 class="far fa-arrow-right"></i></a>
                     </div>
                 </div>

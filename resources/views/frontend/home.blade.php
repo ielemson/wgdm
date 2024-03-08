@@ -8,74 +8,16 @@
 @include('frontend.include.header')
 
 <main>
-    @include('frontend.include.slider')
-    <!--feature-area start-->
-    {{-- <section class="feature-area grey-bg pos-rel pt-130 pb-100">
-        <div class="round-shape">
-            <img src="assets/img/shape/01.png" alt="">
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-10 offset-xl-1 wow fadeInUp2 animated" data-wow-delay='.1s'>
-                    <div class="section-title text-center mb-85">
-                        <h6 class="left-line pl-75 pr-75">Features Categories</h6>
-                        <h2>Explore Our Crowd Founding <br>
-                            <span>Features Categories</span></h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-lg-between">
-                <div class="col-xl-2 col-lg-4 col-md-4 custom-col wow fadeInUp2 animated" data-wow-delay='.1s'>
-                    <div class="features white-bg pos-rel text-center mb-30">
-                        <div class="features__icon mb-20">
-                            <i class="flaticon-dish"></i>
-                        </div>
-                        <h6><a href="about.html">Raising Food</a></h6>
-                    </div>
-                </div>
-                <div class="col-xl-2 col-lg-4 col-md-4 custom-col wow fadeInUp2 animated" data-wow-delay='.3s'>
-                    <div class="features white-bg pos-rel text-center mb-30">
-                        <div class="features__icon mb-20">
-                            <i class="flaticon-open-book"></i>
-                        </div>
-                        <h6><a href="about.html">Kids Education</a></h6>
-                    </div>
-                </div>
-                <div class="col-xl-2 col-lg-4 col-md-4 custom-col wow fadeInUp2 animated" data-wow-delay='.5s'>
-                    <div class="features white-bg pos-rel text-center mb-30">
-                        <div class="features__icon mb-20">
-                            <i class="flaticon-computer"></i>
-                        </div>
-                        <h6><a href="about.html">Web Design</a></h6>
-                    </div>
-                </div>
-                <div class="col-xl-2 col-lg-4 col-md-4 custom-col wow fadeInUp2 animated" data-wow-delay='.7s'>
-                    <div class="features white-bg pos-rel text-center mb-30">
-                        <div class="features__icon mb-20">
-                            <i class="flaticon-stethoscope"></i>
-                        </div>
-                        <h6><a href="about.html">Medical Health</a></h6>
-                    </div>
-                </div>
-                <div class="col-xl-2 col-lg-4 col-md-4 custom-col wow fadeInUp2 animated" data-wow-delay='.9s'>
-                    <div class="features white-bg pos-rel text-center mb-30">
-                        <div class="features__icon mb-20">
-                            <i class="flaticon-project-management"></i>
-                        </div>
-                        <h6><a href="about.html">Technology</a></h6>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> --}}
-    <!--feature-area end-->
-   
+    @include('frontend.include.slider') 
     <!--about-us-area start-->
    @include('frontend.include.who_we_are')
+
    @include('frontend.include.support_us')
-    <!--about-us-area end-->
+   
+   @include('frontend.include.founder')
     <!--donation-area start-->
     @include('frontend.include.donate')
+
     @include('frontend.include.gallery')
     <!--donation-area end-->
     <!--project-area start-->

@@ -17,9 +17,9 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Validator;
-use Illuminate\Support\Facades\Session;
-use CyrildeWit\EloquentViewable\InteractsWithViews;
-use CyrildeWit\EloquentViewable\Contracts\Viewable;
+// use Illuminate\Support\Facades\Session;
+// use CyrildeWit\EloquentViewable\InteractsWithViews;
+// use CyrildeWit\EloquentViewable\Contracts\Viewable;
 
 class HomeController extends Controller 
 {
@@ -235,7 +235,6 @@ class HomeController extends Controller
         }
     }
 
-
     public function CotactForm(Request $request){
 
 
@@ -301,5 +300,10 @@ class HomeController extends Controller
         Artisan::call('cache:clear');
 
         return view('clear-cache');
+    }
+
+
+    public function donate(){
+        return view('frontend.pages.donate');
     }
 }

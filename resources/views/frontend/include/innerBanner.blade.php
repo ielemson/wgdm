@@ -56,7 +56,7 @@
                 </div>
                 <div class="col-xl-3 col-lg-1 col-md-6 col-6 text-right d-flex align-items-center justify-content-end">
                     <div class="quote-btn mr-10">
-                        <a href="{{ route('contact.us') }}" class="theme_btn theme_btn_bg">get a quote <i
+                        <a href="{{ route('contact.us') }}" class="theme_btn theme_btn_bg">Donate Now<i
                                 class="far fa-arrow-right"></i></a>
                     </div>
                     <div class="hamburger-menu">
