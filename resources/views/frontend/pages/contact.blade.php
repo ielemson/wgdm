@@ -291,7 +291,7 @@ data-aos-easing="ease-in-sine">
                 <div class="col-xl-3 col-lg-3 col-md-4">
                     <div class="cta-wrapper wow fadeInUp2 animated" data-wow-delay='.1s'>
                         <div class="cta-btn tex-md-right">
-                            <a class="theme_btn theme_btn_bg" href="{{ route("contact.us") }}">contact us <i
+                            <a class="theme_btn theme_btn_bg" href="{{ route("donate") }}">Donate<i
                                 class="far fa-arrow-right"></i></a>
                         </div>
                     </div>

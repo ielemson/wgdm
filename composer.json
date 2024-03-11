@@ -11,7 +11,7 @@
     ],
     "license": "MIT",
     "require": {
-        "php": "^8.0",
+        "php": "^8.0 || 8.1.0",
         "biscolab/laravel-recaptcha": "^6.0",
         "bumbummen99/shoppingcart": "^4.2",
         "cyrildewit/eloquent-viewable": "^7.0",

@@ -17,7 +17,7 @@
                                             data-animation="fadeInLeft" data-delay=".7s">explore more <i
                                                 class="far fa-arrow-right"></i></a>
                                     </li>
-                                    <li><a class="theme_btn theme-border-btn" href="{{ route('contact.us') }}"
+                                    <li><a class="theme_btn theme-border-btn" href="{{ route('donate') }}"
                                             data-animation="fadeInLeft" data-delay=".7s">donate now <i
                                                 class="far fa-arrow-right"></i></a>
                                     </li>
